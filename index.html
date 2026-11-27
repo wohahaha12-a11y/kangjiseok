@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>강지석 · 김가원 결혼식에 초대합니다</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Gowun+Dodum&display=swap">
+<style>
+:root{
+  --bg:#F5EBE6; --surface:#FBF5F1; --ink:#3A2A2E; --muted:#7A6469; --line:#D9C3BC;
+  --wine:#8A4651; --gold:#B58A5B; --sage:#8E9C86;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#241A1D; --surface:#2F2327; --ink:#F3E4DD; --muted:#C2A9A4; --line:#4B3A3F;
+    --wine:#E3A2AB; --gold:#D8AE80;
+  }
+}
+:root[data-theme="dark"]{ --bg:#241A1D; --surface:#2F2327; --ink:#F3E4DD; --muted:#C2A9A4; --line:#4B3A3F; --wine:#E3A2AB; --gold:#D8AE80; }
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Gowun Dodum","Apple SD Gothic Neo","Malgun Gothic",sans-serif;font-size:17px;line-height:1.85;overflow-x:hidden;word-break:keep-all;overflow-wrap:break-word;text-align:center}
+h1,h2,h3{font-family:"Nanum Myeongjo","Batang","AppleMyungjo",serif;font-weight:400;margin:0;line-height:1.35}
+main{max-width:600px;margin:0 auto;padding:0 24px 72px}
+section{margin-top:72px}
+h2{font-size:22px;color:var(--wine);letter-spacing:.12em;margin-bottom:28px}
+h2::after{content:"";display:block;width:1px;height:36px;background:var(--gold);margin:16px auto 0}
+
+/* hero */
+.hero{padding:88px 0 8px}
+.hero .names{font-size:clamp(40px,12vw,68px);font-weight:400;letter-spacing:.06em;animation:rise 1.4s ease-out both}
+.hero .amp{color:var(--gold);font-style:italic;padding:0 .12em}
+.hero .lead{margin:22px 0 30px;color:var(--muted);letter-spacing:.04em;animation:rise 1.4s .25s ease-out both}
+.hero .date{font-family:"Nanum Myeongjo",serif;font-size:20px;letter-spacing:.1em;display:inline-block;padding:10px 28px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);animation:rise 1.4s .5s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* people */
+.people{display:grid;gap:36px}
+@media(min-width:560px){
+  .people{grid-template-columns:1fr 1fr;gap:0}
+  .person+.person{border-left:1px solid var(--line)}
+}
+.person{padding:8px 24px}
+.role{color:var(--gold);letter-spacing:.2em;font-size:15px;margin-bottom:6px}
+.person h3{font-size:30px;letter-spacing:.08em;margin-bottom:12px}
+.person p{margin:0;color:var(--muted);text-wrap:balance}
+
+/* when */
+.when .big{font-family:"Nanum Myeongjo",serif;font-size:clamp(26px,7vw,34px);letter-spacing:.04em}
+.when .time{color:var(--muted);margin-top:4px;letter-spacing:.06em}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;max-width:320px;margin:28px auto 0;font-size:15px}
+.cal b{font-weight:400;color:var(--muted);font-size:13px;padding-bottom:6px}
+.cal span{aspect-ratio:1;display:grid;place-items:center;border-radius:50%;color:var(--muted)}
+.cal .sun{color:var(--wine)}
+.cal .day{background:var(--wine);color:#FFF8F4;font-family:"Nanum Myeongjo",serif;font-weight:700;font-size:17px;box-shadow:0 0 0 4px var(--bg),0 0 0 5px var(--gold)}
+
+/* where */
+.where h3{font-size:30px;letter-spacing:.06em}
+.where .addr{margin:8px 0 26px;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{font-size:16px;text-decoration:none;color:var(--ink);border:1px solid var(--gold);border-radius:999px;padding:9px 26px;transition:background .2s,color .2s}
+.btn:hover{background:var(--wine);border-color:var(--wine);color:#FFF8F4}
+.btn:focus-visible{outline:2px solid var(--wine);outline-offset:3px}
+
+footer{margin-top:80px;padding-top:36px;border-top:1px solid var(--line)}
+footer .msg{font-family:"Nanum Myeongjo",serif;font-size:19px;text-wrap:balance}
+footer p{margin:14px 0 0;color:var(--muted);letter-spacing:.08em}
+@media (prefers-reduced-motion: reduce){.hero .names,.hero .lead,.hero .date{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <h1 class="names">지석<span class="amp">&amp;</span>가원</h1>
+    <p class="lead">서로의 곁에서 함께 걸어가려 합니다</p>
+    <div class="date">2026. 9. 20. 일요일</div>
+  </header>
+
+  <section aria-labelledby="who">
+    <h2 id="who">두 사람을 소개합니다</h2>
+    <div class="people">
+      <article class="person">
+        <div class="role">신랑</div>
+        <h3>강지석</h3>
+        <p>가원 곁에서 가장 편안하게 웃는 사람. 한결같은 마음으로 함께하겠습니다.</p>
+      </article>
+      <article class="person">
+        <div class="role">신부</div>
+        <h3>김가원</h3>
+        <p>지석의 하루를 따뜻하게 밝히는 사람. 서로의 가장 좋은 친구로 살겠습니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="when" aria-labelledby="when">
+    <h2 id="when">예식 일정</h2>
+    <div class="big">2026년 9월 20일 일요일</div>
+    <div class="time">오전 11:00</div>
+    <div class="cal" id="cal" role="img" aria-label="2026년 9월 달력, 20일 일요일 오전 11시에 표시"></div>
+  </section>
+
+  <section class="where" aria-labelledby="where">
+    <h2 id="where">예식 장소</h2>
+    <h3>제주퍼시픽호텔</h3>
+    <p class="addr">제주특별자치도 제주시 서사로 20</p>
+    <div class="btns">
+      <a class="btn" href="https://map.naver.com/p/search/%EC%A0%9C%EC%A3%BC%ED%8D%BC%EC%8B%9C%ED%94%BD%ED%98%B8%ED%85%94" target="_blank" rel="noopener">네이버 지도</a>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%EC%A0%9C%EC%A3%BC%ED%8D%BC%EC%8B%9C%ED%94%BD%ED%98%B8%ED%85%94" target="_blank" rel="noopener">구글 지도</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="msg">귀한 걸음으로 자리를 빛내 주시면 감사하겠습니다</div>
+    <p>강지석 · 김가원 올림</p>
+  </footer>
+</main>
+<script>
+(function(){
+  var el=document.getElementById('cal'),h='';
+  ['일','월','화','수','목','금','토'].forEach(function(d,i){h+='<b'+(i===0?' class="sun"':'')+'>'+d+'</b>';});
+  for(var i=0;i<2;i++)h+='<span></span>';
+  for(var d=1;d<=30;d++){
+    var wd=(d+1)%7, cls=d===20?'day':(wd===0?'sun':'');
+    h+='<span'+(cls?' class="'+cls+'"':'')+'>'+d+'</span>';
+  }
+  el.innerHTML=h;
+})();
+</script>
+</body>
+</html>
